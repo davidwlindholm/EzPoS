@@ -209,11 +209,14 @@ public class SalesPanel extends JPanelBG {
         itemManager.completeSale(sale);
         sale = null;
         updateSalesTable();
+        totalAmountLabel.setText("0,00 kr");
     }
     
     public void cancelSale() {
         sale = null;
         updateSalesTable();
+        //DecimalFormat df = new DecimalFormat("#.00"); 
+        totalAmountLabel.setText("0,00 kr");
     }
     
 
